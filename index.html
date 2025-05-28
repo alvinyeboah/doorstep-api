@@ -1,19 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>API Documentation</title>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-  </style>
+  <script type="module" src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"></script>
 </head>
 <body>
-  <redoc spec-url='./api-docs.yaml'></redoc>
-  <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
+  <rapi-doc 
+    spec-url="./api-docs.yaml"
+    theme="light"
+    render-style="read"
+    layout="column"
+    sort-tags="true"
+    nav-bg-color="#ffffff"
+    primary-color="#007bff"
+    font-size="default"
+    regular-font="'Segoe UI', Arial, sans-serif"
+    show-header="false"
+    allow-try="true"
+    show-info="true"
+  > </rapi-doc>
 </body>
 </html>
